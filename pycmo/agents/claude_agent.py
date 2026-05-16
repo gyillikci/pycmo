@@ -104,6 +104,11 @@ DECISION PRINCIPLES:
 - Only command units that exist on your side. Only attack contacts you have actually detected.
 - Lat/lon are decimal degrees. Small deltas (0.1 deg ~= 11 km) move units short distances; large deltas reposition across the theater.
 
+ARGUMENT CONVENTIONS:
+- Movement, launch, RTB, and refuel actions take a unit_name (the human-readable name from YOUR UNITS, e.g. "Thunder #1").
+- auto_attack_contact takes IDs, NOT names: attacker_id comes from your unit's ID field, contact_id comes from the contact's ID field. Both IDs are listed in CONTROLLABLE UNIT IDS and DETECTED CONTACT IDS in the situation report.
+- Mixing names and IDs will fail silently.
+
 You must respond with exactly one tool call. Do not write prose."""
 
 
