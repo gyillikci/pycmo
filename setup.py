@@ -26,6 +26,7 @@ setup(
         'pywin32==306',
     ],
     extras_require={
-        "gym": ['gymnasium==0.29.1']
+        "gym": ['gymnasium==0.29.1'],
+        "claude": ['anthropic>=0.40.0'],
     }
 )
